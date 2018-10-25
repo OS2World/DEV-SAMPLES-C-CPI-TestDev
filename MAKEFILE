@@ -1,0 +1,7 @@
+testdev.exe: testdev.obj
+    link386 testdev,,,/pm:vio/map:full;
+
+testdev.obj: testdev.c
+    icc -c -Ss -Kb testdev.c
+
+
